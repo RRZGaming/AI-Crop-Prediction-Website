@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.site-name {
+    font-size: 1.8em;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.info-box {
+    text-align: center;
+    width: 30%;
+}
+
+.info-box h3 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-bottom: 50px;
+}
+#name,#email,#message{
+    border: solid 1px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e8449;
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.map-container h3 {
+    color: #27ae60;
+    margin-bottom: 20px;
+}

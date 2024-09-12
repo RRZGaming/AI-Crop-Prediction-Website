@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Crop AI</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <button id="toggleDarkMode">🌙 Dark Mode</button>
+    </div>
+
+
+    <!-- Navigation Bar (Similar to other pages) -->
+    <nav>
+        <div class="logo-container">
+            <img src="img/logom.png" alt="Logo" class="logo-img">
+            <h2 class="site-name">Makrishi</h2>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="file:///D:/Hackathon/Website/index.html#features" class="nav-item">Home</a>
+                <a href="file:///D:/Hackathon/Website/shop/shop.html" class="nav-item">Shop</a>
+                <a href="file:///D:/Hackathon/Website/Contact%20Us/contact.html" class="nav-item">Contact Us</a>
+                <a href="file:///D:/Hackathon/Website/Community/community.html?username=egeg&title=egeg&content=egeggeeg" class="nav-item">Community</a>
+                <a href="news.html" class="nav-item">News</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h1>Latest Agricultural News</h1>
+            <p>Stay updated with the latest agricultural developments, research, and technologies.</p>
+
+            <!-- News Categories (Optional) -->
+            <div class="news-categories">
+                <button class="category-btn" data-category="all">All</button>
+                <button class="category-btn" data-category="tech">Tech</button>
+                <button class="category-btn" data-category="policy">Policy</button>
+                <button class="category-btn" data-category="research">Research</button>
+                <button class="category-btn" data-category="market">Market</button>
+            </div>
+
+            <!-- News Articles Section -->
+            <div class="news-grid">
+                <!-- News Article 1 -->
+                <div class="news-card" data-category="tech">
+                    <img src="img/tech.jpeg" alt="Tech News" class="news-img">
+                    <h3>AI in Agriculture: The Future of Farming</h3>
+                    <p>Discover how AI technology is transforming the way we farm, from automated harvesting to crop disease prediction...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <!-- News Article 2 -->
+                <div class="news-card" data-category="policy">
+                    <img src="img/policy.jpg" alt="Policy News" class="news-img">
+                    <h3>New Agricultural Policy: What Farmers Should Know</h3>
+                    <p>The government has introduced a new set of regulations aimed at improving sustainability in agriculture. Here’s what you need to know...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <!-- News Article 3 -->
+                <div class="news-card" data-category="research">
+                    <img src="img/research.jpeg" alt="Research News" class="news-img">
+                    <h3>Breakthrough in Crop Disease Resistance</h3>
+                    <p>Scientists have made a significant discovery in breeding disease-resistant crops. This could lead to more resilient food production...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <!-- News Article 4 -->
+                <div class="news-card" data-category="market">
+                    <img src="img/market.png" alt="Market News" class="news-img">
+                    <h3>Global Crop Market Trends for 2024</h3>
+                    <p>Experts predict a rise in demand for organic products, and farmers should be prepared for market shifts in the coming years...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="news.js"></script>
+</body>
+</html>

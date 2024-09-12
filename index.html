@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Crop Disease Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar with 3 Dots (Hamburger Menu) -->
+    <nav>
+        <div class="logo-container">
+            <!-- Logo Image -->
+            <img src="img/logom.png" alt="Logo" class="logo-img">
+            <!-- Website Name -->
+            <h2 class="site-name">Makrishi</h2>
+        </div>
+        <!-- 3 dots icon -->
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Hidden popup menu -->
+        <ul class="nav-popup" id="nav-popup">
+            <li><a href="#" id="Loginp">Login</a></li>
+            <li><a href="#" id="openSignUp">Sign Up</a></li>
+            <li><a href="Community/community.html">Community</a></li>
+            <li><a href="#" id="Languagep">Language</a></li>
+            <li><a href="#">Notification</a></li>
+            <li><a href="News/news.html">News</a></li>
+            <li><a href="shop/shop.html">Shop</a></li>
+            <li><a href="Contact Us/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+     <!-- Login Pop-up -->
+     <div class="popup" id="login-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <div class="social-login">
+                    <p>Or login with</p>
+                    <div class="social-buttons">
+                        <a href="#" class="google-btn"><img src="img/google.jpg" alt="Google Logo">Login with Google</a>
+                        <a href="#" class="facebook-btn"><img src="img/facebook.png" alt="Facebook Logo">Login with Facebook</a>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+     <!-- Sign Up Popup -->
+     <div id="signUpPopup" class="popup">
+         <div class="popup-content">
+             <span class="close-btn" id="closeSignUp">&times;</span>
+             <div class="signup-container">
+                 <h2>Sign Up to Makrishi</h2>
+                 
+                 <!-- Sign Up Form -->
+                 <form>
+                     <label for="signup-username">Username:</label>
+                     <input type="text" id="signup-username" placeholder="Enter username" required>
+                     
+                     <label for="signup-email">Email:</label>
+                     <input type="email" id="signup-email" placeholder="Enter email" required>
+                     
+                     <label for="signup-password">Password:</label>
+                     <input type="password" id="signup-password" placeholder="Enter password" required>
+                     
+                     <label for="signup-confirm-password">Confirm Password:</label>
+                     <input type="password" id="signup-confirm-password" placeholder="Confirm password" required>
+                     
+                     <button type="submit" class="signup-btn">Sign Up</button>
+                 </form>
+                 
+                 <!-- Social Sign Up Buttons -->
+                 <div class="social-signup">
+                     <p>Or sign up with</p>
+                     <div class="social-buttons">
+                         <a href="#" class="google-btn"><img src="img/google.jpg" alt="Google Logo"> Sign Up with Google</a>
+                         <a href="#" class="facebook-btn"><img src="img/facebook.png" alt="Facebook Logo"> Sign Up with Facebook</a>
+                     </div>
+                 </div>
+                 
+                 <!-- Link to Login Popup -->
+                 <p class="toggle-link">Already have an account? <a href="#" id="Loginp">Login here</a></p>
+             </div>
+         </div>
+     </div>
+    <!-- Language Selection Popup -->
+    <div class="popup" id="login-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dropdown for Language Selection (Within the Hamburger Menu) -->
+    <div class="language-popup" id="language-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-language-popup">&times;</span>
+            <h2>Select Language</h2>
+            <button class="language-btn" data-lang="en">English</button>
+            <button class="language-btn" data-lang="hi">हिंदी (Hindi)</button>
+            <button class="language-btn" data-lang="or">ଓଡ଼ିଆ (Odia)</button>
+            <div>
+            <select class="language-btn" name="Language" >
+            <option value="অসমীয়া (Asamiya)" class="language-btn" data-lang="en">অসমীয়া (Asamiya)</option>
+            <option value="বাংলা (Bangla)" class="language-btn" data-lang="en">বাংলা (Bangla)</option>
+            <option value="बड़ो (Boro)" class="language-btn" data-lang="en">बड़ो (Boro)</option>
+            <option value="डोगरी (Dogri)" class="language-btn" data-lang="en">डोगरी (Dogri)</option>
+            <option value="ગુજરાતી (Gujarati)" class="language-btn" data-lang="en">ગુજરાતી (Gujarati)</option>
+            <option value="كٲشُر (Koshur)" class="language-btn" data-lang="en">كٲشُر (Koshur)</option>
+            <option value="ಕನ್ನಡ (Kannada)" class="language-btn" data-lang="en">ಕನ್ನಡ (Kannada)</option>
+            <option value="कोंकणी (Konkani)" class="language-btn" data-lang="en">कोंकणी (Konkani)</option>
+            <option value="मैथिली (Maithili)" class="language-btn" data-lang="en">मैथिली (Maithili)</option>
+            <option value="മലയാളം (Malayalam)" class="language-btn" data-lang="en">മലയാളം (Malayalam)</option>
+            <option value="মেইতেই লোন (Meitei Lon)" class="language-btn" data-lang="en">মেইতেই লোন (Meitei Lon)</option>
+            <option value="मराठी (Marathi)" class="language-btn" data-lang="en">मराठी (Marathi)</option>
+            <option value="नेपाली (Nepali)" class="language-btn" data-lang="en">नेपाली (Nepali)</option>
+            <option value="ਪੰਜਾਬੀ (Punjabi)" class="language-btn" data-lang="en">ਪੰਜਾਬੀ (Punjabi)</option>
+            <option value=" தமிழ் (Tamil)" class="language-btn" data-lang="en"> தமிழ் (Tamil)</option>
+            <option value=" తెలుగు (Telugu)" class="language-btn" data-lang="en"> తెలుగు (Telugu)</option>
+            <option value=" ગુ ᱥᱟᱱᱛᱟᱲᱤ (Santali)" class="language-btn" data-lang="en"> ગુ ᱥᱟᱱᱛᱟᱲᱤ (Santali)</option>
+            <option value="سنڌي (Sindhi)" class="language-btn" data-lang="en"> سنڌي (Sindhi)</option>
+            <option value=" اردو (Urdu)" class="language-btn" data-lang="en"> اردو (Urdu)</option>
+            </select>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>AI-Driven Crop Disease Prediction & Management System</h1>
+            <p>Empowering farmers with AI to diagnose and manage crop diseases.</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content-container">
+            <h2>About the System</h2>
+            <p>Our AI-powered system allows farmers to quickly identify and manage crop diseases using advanced machine learning algorithms. By uploading images and symptoms, the AI can accurately predict the disease and provide management tips.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="content-container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Image-based Detection</h3>
+                    <p>Upload images of your crops and let our AI diagnose potential diseases.</p>
+                </div>
+                <div class="feature">
+                    <h3>Symptom Analysis</h3>
+                    <p>Input symptoms for further analysis and get real-time predictions.</p>
+                </div>
+                <div class="feature">
+                    <h3>Management Suggestions</h3>
+                    <p>Receive actionable management advice based on the diagnosis.</p>
+                </div>
+                <div class="feature">
+                    <h3>Real-time Updates</h3>
+                    <p>Stay informed with the latest crop disease trends and prevention methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="cta-container">
+            <h2>Start Predicting Crop Diseases Today</h2>
+            <p>Take control of your crop health and protect your yields. Try our system now!</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h4>Chat with us</h4>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button id="send-chatbot-message">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbot-icon">
+        <img src="img/robotm.png" alt="Chatbot Icon">
+    </div>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 AI-Driven Crop Disease Prediction System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

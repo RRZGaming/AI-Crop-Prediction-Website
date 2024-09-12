@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Crop AI</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Similar to other pages) -->
+    <nav>
+        <div class="logo-container">
+            <img src="img/logom.png" alt="Logo" class="logo-img">
+            <h2 class="site-name">Makrishi</h2>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="file:///D:/Hackathon/Website/index.html#" class="nav-item">Home</a>
+                <a href="file:///D:/Hackathon/Website/Contact%20Us/contact.html" class="nav-item">Contact Us</a>
+                <a href="file:///D:/Hackathon/Website/shop/shop.html" class="nav-item">Shop</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <h1>Our Products</h1>
+
+            <!-- Product Categories (Optional) -->
+            <div class="categories">
+                <button class="category-btn" data-category="all">All</button>
+                <button class="category-btn" data-category="seeds">Seeds</button>
+                <button class="category-btn" data-category="fertilizers">Fertilizers</button>
+                <button class="category-btn" data-category="tools">Tools</button>
+                <button class="category-btn" data-category="machinery">Machinery</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="seeds">
+                    <img src="img/seeds.jpg" alt="Seeds" class="product-img">
+                    <h3>High-Quality Seeds</h3>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="fertilizers">
+                    <img src="img/organic fertilixer.jpeg" alt="Fertilizers" class="product-img">
+                    <h3>Organic Fertilizer</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="tools">
+                    <img src="img/tool set.webp" alt="Tools" class="product-img">
+                    <h3>Gardening Tools Set</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="machinery">
+                    <img src="img/tractors.jpg" alt="Machinery" class="product-img">
+                    <h3>Tractor Machinery</h3>
+                    <p>$5000.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="shop.js"></script>
+</body>
+</html>

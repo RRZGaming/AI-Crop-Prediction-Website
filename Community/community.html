@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Crop AI</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Similar to other pages) -->
+    <nav>
+        <div class="logo-container">
+            <img src="img/logom.png" alt="Logo" class="logo-img">
+            <h2 class="site-name">Makrishi</h2>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="file:///D:/Hackathon/Website/index.html#" class="nav-item">Home</a>
+                <a href="file:///D:/Hackathon/Website/shop/shop.html" class="nav-item">Shop</a>
+                <a href="file:///D:/Hackathon/Website/Contact%20Us/contact.html" class="nav-item">Contact Us</a>
+                <a href="community.html" class="nav-item">Community</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h1>Community Forum</h1>
+            <p>Share your knowledge or ask questions. Connect with the farming community!</p>
+
+            <!-- Create New Post -->
+            <div class="new-post">
+                <h2>Create a Post</h2>
+                <form id="postForm">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="title">Post Title</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="content">Message</label>
+                    <textarea id="content" name="content" required></textarea>
+
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+
+            <!-- Posts Section -->
+            <div class="posts-section">
+                <h2>Recent Posts</h2>
+                <div id="postList">
+                    <!-- Posts will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="community.js"></script>
+</body>
+</html>
